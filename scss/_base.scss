@@ -30,6 +30,12 @@ a {
     @media (max-width: 1220px) {
         width: 968px;
     }
+    @media (max-width: 967px) {
+        width: 720px;
+    }
+    @media (max-width: 767px) {
+        width: 90%;
+    }
 }
 .btn {
     position: relative;
