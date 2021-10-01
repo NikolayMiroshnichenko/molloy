@@ -1,0 +1,73 @@
+.main-wrapper {
+    width: 100%;
+    height: 95vh;
+    min-height: 920px;
+    background-image: url(../img/main/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 100%;
+
+    @media (max-width: 1450px) {
+        min-height: 820px;
+    }
+    @media (max-width: 1450px) {
+        min-height: 720px;
+        height: 100vh;
+    }
+
+    .main {
+        padding-top: 50px;
+
+        .main-logo {
+            display: block;
+            width: 178px;
+            margin: 0 auto;
+            margin-bottom: 11px;
+
+            img {
+                display: block;
+                width: 100%;
+            }
+        }
+        .main-content {
+            margin-bottom: 50px;
+
+            .main-content__title {
+                font-style: italic;
+                font-weight: bold;
+                font-size: 150px;
+                color: #ffffff;
+                text-align: center;
+                line-height: 1;
+                font-family: "Moniqa";
+                line-height: 156px;
+
+                @media (max-width: 1450px) {
+                    font-size: 130px;
+                    line-height: 126px;
+                }
+            }
+            .main-content__text {
+                font-weight: 500;
+                font-size: 20px;
+                letter-spacing: 0.04em;
+                color: #ffffff;
+                text-align: center;
+                @media (max-width: 1450px) {
+                    font-size: 16px;
+                }
+            }
+        }
+        .main-btn__wrapper {
+            text-align: center;
+
+            .main-btn {
+                color: #ffffff;
+                background: linear-gradient(46.19deg, #f09819 5.66%, #edde5d 94.35%),
+                    linear-gradient(135deg, #ec2f2f 0%, #dd2fec 100%),
+                    linear-gradient(198.01deg, #00bf57 0.44%, #005f91 108.3%);
+                box-shadow: 0px 3px 0px #e1991e, 0px 21px 54px -18px rgba(240, 176, 48, 0.26);
+            }
+        }
+    }
+}

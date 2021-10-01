@@ -1,0 +1,80 @@
+.florida-wrapper {
+    position: relative;
+    background-image: url(../img/florida/bg.svg);
+    background-repeat: no-repeat;
+    background-size: 53vw;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    margin-bottom: 40px;
+
+    .florida {
+        display: flex;
+        justify-content: flex-end;
+        padding: 160px 0;
+
+        .florida-content {
+            width: 660px;
+            .florida-content__title {
+                margin-bottom: 42px;
+            }
+            .florida-list {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+
+                .florida-list__item {
+                    width: 46%;
+                    margin-bottom: 20px;
+                    p {
+                        font-size: 16px;
+                        line-height: 1.5;
+                        color: #525252;
+                    }
+                }
+            }
+        }
+    }
+    .florida-img {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 60%;
+
+        img {
+            display: block;
+            width: 100%;
+        }
+        .florida-img__title {
+            position: absolute;
+            right: -50px;
+            top: 47%;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 1;
+            letter-spacing: 0.04em;
+            color: #6d86a4;
+
+            &::before {
+                position: absolute;
+                content: "";
+                right: 100%;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 30px;
+                height: 8px;
+                background-image: url(../img/florida/arrow.svg);
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+        }
+    }
+    .florida-date {
+        position: absolute;
+        font-family: "Forum", cursive;
+        font-size: 150px;
+        color: #6d86a4;
+        top: 0;
+        right: 20%;
+        opacity: 0.1;
+    }
+}
