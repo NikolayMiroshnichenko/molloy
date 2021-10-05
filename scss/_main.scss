@@ -19,14 +19,16 @@
     }
 
     .main {
-        padding-top: 50px;
+        padding-top: 200px;
+
+
         @media (max-width: 967px) {
             display: flex;
             align-items: center;
             flex-direction: column;
             justify-content: center;
             padding-top: 0;
-            height: calc(100% - 180px);
+            height: calc(100% - 0px);
         }
 
         .main-logo {

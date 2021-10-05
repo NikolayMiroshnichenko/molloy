@@ -74,4 +74,9 @@ a {
     font-weight: 500;
     color: #6d86a4;
     text-transform: uppercase;
+
+    @media (max-width: 767px) {
+        font-size: 24px;
+    }
+
 }

@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="fonts/gilroy/stylesheet.css">
     <link rel="stylesheet" href="css/main.min.css">
 </head>
@@ -16,37 +17,45 @@
 
 
 <body>
-    <section class="main-wrapper">
-        <header class="header-wrapper container">
-            <div class="header">
-                <a href="#" class="header-logo">
-                    <img src="./img/logo.svg" alt="logo">
-                </a>
-                <nav class="nav">
-                    <div class="nav-logo">
-                        <img src="img/logo-dark.svg" alt="">
-                    </div>
-                    <ul class="nav-list">
-                        <li class="nav-list__item">
-                            <a href="#">Home</a>
-                        </li>
-                        <li class="nav-list__item">
-                            <a href="#">Accommodations</a>
-                        </li>
-                        <li class="nav-list__item">
-                            <a href="#">Gallery</a>
-                        </li>
-                        <li class="nav-list__item">
-                            <a href="#">The Island</a>
-                        </li>
-                        <li class="nav-list__item">
-                            <a href="#">About Us</a>
-                        </li>
-                    </ul>
-                    <a href="#" class="header-btn btn">Book your stay</a>
-                </nav>
+    <header class="header-wrapper">
+        <div class="header container">
+            <a href="#" class="header-logo">
+                <img src="./img/logo.svg" alt="logo" class="logo-white">
+                <img src="./img/logo-dark.svg" class="logo-dark" alt="logo">
+            </a>
+            <nav class="nav js-menu">
+                <div class="nav-logo">
+                    <img src="img/logo-dark.svg" alt="">
+                </div>
+                <ul class="nav-list">
+                    <li class="nav-list__item">
+                        <a href="#">Home</a>
+                    </li>
+                    <li class="nav-list__item">
+                        <a href="#">Accommodations</a>
+                    </li>
+                    <li class="nav-list__item">
+                        <a href="#">Gallery</a>
+                    </li>
+                    <li class="nav-list__item">
+                        <a href="#">The Island</a>
+                    </li>
+                    <li class="nav-list__item">
+                        <a href="#">About Us</a>
+                    </li>
+                </ul>
+                <a href="#" class="header-btn btn">Book your stay</a>
+                <div class="close-menu js-close-menu" data-close="close-menu">x</div>
+            </nav>
+            <div class="menu-btn js-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
-        </header>
+        </div>
+    </header>
+    <section class="main-wrapper">
         <div class="main container">
             <div class="main-logo">
                 <img src="img/logo.svg" alt="">
@@ -60,7 +69,11 @@
             </div>
         </div>
     </section>
-    <!-- <section class="florida-wrapper">
+    <section class="florida-wrapper">
+        <div class="florida-img">
+            <img src="img/florida/map.png" alt="The Molloy">
+            <span class="florida-img__title">Treasure Island</span>
+        </div>
         <div class="florida container">
             <div class="florida-content">
                 <h2 class="florida-content__title title">Get the perfect Florida vacation to remember for a lifetime
@@ -78,10 +91,6 @@
                     </li>
                 </ul>
             </div>
-        </div>
-        <div class="florida-img">
-            <img src="img/florida/map.png" alt="The Molloy">
-            <span class="florida-img__title">Treasure Island</span>
         </div>
         <div class="florida-date">1950</div>
     </section>
@@ -108,11 +117,364 @@
             </ul>
             <div class="molly-palm"></div>
         </div>
-    </section> -->
+    </section>
+    <section class="apartment-wrapper">
+        <div class="apartment container">
+            <h2 class="apartment-title title">book your apartment</h2>
+            <div class="swiper apartmentSlider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="item">
+                            <div class="item-header">
+                                <h3 class="item-header__title">Molloy Suite - 1 Full 1 Twin</h3>
+                                <div class="item-header__reviews">
+                                    <div class="reviews-list">
+                                        <span class="reviews-list__item"></span>
+                                        <span class="reviews-list__item"></span>
+                                        <span class="reviews-list__item"></span>
+                                        <span class="reviews-list__item"></span>
+                                        <span class="reviews-list__item"></span>
+                                    </div>
+                                    <p class="reviews-total">39 revew</p>
+                                </div>
+                            </div>
+                            <div class="item-body">
+                                <div class="item-body__img">
+                                    <img src="img/apartment/slide-img-1.png" alt="">
+                                </div>
+                                <div class="item-body__content">
+                                    <div class="header-content">
+                                        <div class="header-content__item">
+                                            <svg class="header-content__icon">
+                                                <use xlink:href="img/apartment/icons.svg#icon-person"></use>
+                                            </svg>
+                                            <p>Persons: 2</p>
+                                        </div>
+                                        <div class="header-content__item">
+                                            <svg class="header-content__icon">
+                                                <use xlink:href="img/apartment/icons.svg#icon-sleep"></use>
+                                            </svg>
+                                            <p>Available: 1</p>
+                                        </div>
+                                    </div>
+                                    <p class="item-body__deskriptions">Our Molloy-Suite 1 Full 1 Twin provides a
+                                        living
+                                        room
+                                        with a pullout couch, kitchen, and seperate bedroom These rooms are situated
+                                        on
+                                        the
+                                        beach side of Gulf Blvd. (but do not have a view)
+                                    </p>
+                                    <ul class="item-list">
+                                        <li class="item-list__item">
+                                            <svg class="header-content__icon">
+                                                <use xlink:href="img/apartment/icons.svg#icon-beach"></use>
+                                            </svg>
+                                            <p>Beachfront</p>
+                                        </li>
+                                        <li class="item-list__item">
+                                            <svg class="header-content__icon">
+                                                <use xlink:href="img/apartment/icons.svg#icon-pool"></use>
+                                            </svg>
+                                            <p>1 swimming pool</p>
+                                        </li>
+                                        <li class="item-list__item">
+                                            <svg class="header-content__icon">
+                                                <use xlink:href="img/apartment/icons.svg#icon-parking"></use>
+                                            </svg>
+                                            <p>Free parking</p>
+                                        </li>
+                                        <li class="item-list__item">
+                                            <svg class="header-content__icon">
+                                                <use xlink:href="img/apartment/icons.svg#icon-wifi"></use>
+                                            </svg>
+                                            <p>Free WiFi</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="item-bottom">
+                                <div class="item-bottom__price">
+                                    <div class="item-bottom__line">
+                                        <span class="item-bottom__line-from">From</span>
+                                        <span class="item-bottom__line-price">$102.29 <span>Per night</span></span>
+                                    </div>
+                                    <span class="item-bottom__text">(excluding taxes & fees)</span>
+                                </div>
+                                <a href="#" class="item-btn btn">Book your stay</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="item">
+                            <div class="item-header">
+                                <h3 class="item-header__title">Molloy Suite - 1 Full 1 Twin</h3>
+                                <div class="item-header__reviews">
+                                    <div class="reviews-list">
+                                        <span class="reviews-list__item"></span>
+                                        <span class="reviews-list__item"></span>
+                                        <span class="reviews-list__item"></span>
+                                        <span class="reviews-list__item"></span>
+                                        <span class="reviews-list__item"></span>
+                                    </div>
+                                    <p class="reviews-total">39 revew</p>
+                                </div>
+                            </div>
+                            <div class="item-body">
+                                <div class="item-body__img">
+                                    <img src="img/apartment/slide-img-1.png" alt="">
+                                </div>
+                                <div class="item-body__content">
+                                    <div class="header-content">
+                                        <div class="header-content__item">
+                                            <svg class="header-content__icon">
+                                                <use xlink:href="img/apartment/icons.svg#icon-person"></use>
+                                            </svg>
+                                            <p>Persons: 2</p>
+                                        </div>
+                                        <div class="header-content__item">
+                                            <svg class="header-content__icon">
+                                                <use xlink:href="img/apartment/icons.svg#icon-sleep"></use>
+                                            </svg>
+                                            <p>Available: 1</p>
+                                        </div>
+                                    </div>
+                                    <p class="item-body__deskriptions">Our Molloy-Suite 1 Full 1 Twin provides a
+                                        living
+                                        room
+                                        with a pullout couch, kitchen, and seperate bedroom These rooms are situated
+                                        on
+                                        the
+                                        beach side of Gulf Blvd. (but do not have a view)
+                                    </p>
+                                    <ul class="item-list">
+                                        <li class="item-list__item">
+                                            <svg class="header-content__icon">
+                                                <use xlink:href="img/apartment/icons.svg#icon-beach"></use>
+                                            </svg>
+                                            <p>Beachfront</p>
+                                        </li>
+                                        <li class="item-list__item">
+                                            <svg class="header-content__icon">
+                                                <use xlink:href="img/apartment/icons.svg#icon-pool"></use>
+                                            </svg>
+                                            <p>1 swimming pool</p>
+                                        </li>
+                                        <li class="item-list__item">
+                                            <svg class="header-content__icon">
+                                                <use xlink:href="img/apartment/icons.svg#icon-parking"></use>
+                                            </svg>
+                                            <p>Free parking</p>
+                                        </li>
+                                        <li class="item-list__item">
+                                            <svg class="header-content__icon">
+                                                <use xlink:href="img/apartment/icons.svg#icon-wifi"></use>
+                                            </svg>
+                                            <p>Free WiFi</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="item-bottom">
+                                <div class="item-bottom__price">
+                                    <div class="item-bottom__line">
+                                        <span class="item-bottom__line-from">From</span>
+                                        <span class="item-bottom__line-price">$102.29 <span>Per night</span></span>
+                                    </div>
+                                    <span class="item-bottom__text">(excluding taxes & fees)</span>
+                                </div>
+                                <a href="#" class="item-btn btn">Book your stay</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="item">
+                            <div class="item-header">
+                                <h3 class="item-header__title">Molloy Suite - 1 Full 1 Twin</h3>
+                                <div class="item-header__reviews">
+                                    <div class="reviews-list">
+                                        <span class="reviews-list__item"></span>
+                                        <span class="reviews-list__item"></span>
+                                        <span class="reviews-list__item"></span>
+                                        <span class="reviews-list__item"></span>
+                                        <span class="reviews-list__item"></span>
+                                    </div>
+                                    <p class="reviews-total">39 revew</p>
+                                </div>
+                            </div>
+                            <div class="item-body">
+                                <div class="item-body__img">
+                                    <img src="img/apartment/slide-img-1.png" alt="">
+                                </div>
+                                <div class="item-body__content">
+                                    <div class="header-content">
+                                        <div class="header-content__item">
+                                            <svg class="header-content__icon">
+                                                <use xlink:href="img/apartment/icons.svg#icon-person"></use>
+                                            </svg>
+                                            <p>Persons: 2</p>
+                                        </div>
+                                        <div class="header-content__item">
+                                            <svg class="header-content__icon">
+                                                <use xlink:href="img/apartment/icons.svg#icon-sleep"></use>
+                                            </svg>
+                                            <p>Available: 1</p>
+                                        </div>
+                                    </div>
+                                    <p class="item-body__deskriptions">Our Molloy-Suite 1 Full 1 Twin provides a
+                                        living
+                                        room
+                                        with a pullout couch, kitchen, and seperate bedroom These rooms are situated
+                                        on
+                                        the
+                                        beach side of Gulf Blvd. (but do not have a view)
+                                    </p>
+                                    <ul class="item-list">
+                                        <li class="item-list__item">
+                                            <svg class="header-content__icon">
+                                                <use xlink:href="img/apartment/icons.svg#icon-beach"></use>
+                                            </svg>
+                                            <p>Beachfront</p>
+                                        </li>
+                                        <li class="item-list__item">
+                                            <svg class="header-content__icon">
+                                                <use xlink:href="img/apartment/icons.svg#icon-pool"></use>
+                                            </svg>
+                                            <p>1 swimming pool</p>
+                                        </li>
+                                        <li class="item-list__item">
+                                            <svg class="header-content__icon">
+                                                <use xlink:href="img/apartment/icons.svg#icon-parking"></use>
+                                            </svg>
+                                            <p>Free parking</p>
+                                        </li>
+                                        <li class="item-list__item">
+                                            <svg class="header-content__icon">
+                                                <use xlink:href="img/apartment/icons.svg#icon-wifi"></use>
+                                            </svg>
+                                            <p>Free WiFi</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="item-bottom">
+                                <div class="item-bottom__price">
+                                    <div class="item-bottom__line">
+                                        <span class="item-bottom__line-from">From</span>
+                                        <span class="item-bottom__line-price">$102.29 <span>Per night</span></span>
+                                    </div>
+                                    <span class="item-bottom__text">(excluding taxes & fees)</span>
+                                </div>
+                                <a href="#" class="item-btn btn">Book your stay</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="item">
+                            <div class="item-header">
+                                <h3 class="item-header__title">Molloy Suite - 1 Full 1 Twin</h3>
+                                <div class="item-header__reviews">
+                                    <div class="reviews-list">
+                                        <span class="reviews-list__item"></span>
+                                        <span class="reviews-list__item"></span>
+                                        <span class="reviews-list__item"></span>
+                                        <span class="reviews-list__item"></span>
+                                        <span class="reviews-list__item"></span>
+                                    </div>
+                                    <p class="reviews-total">39 revew</p>
+                                </div>
+                            </div>
+                            <div class="item-body">
+                                <div class="item-body__img">
+                                    <img src="img/apartment/slide-img-1.png" alt="">
+                                </div>
+                                <div class="item-body__content">
+                                    <div class="header-content">
+                                        <div class="header-content__item">
+                                            <svg class="header-content__icon">
+                                                <use xlink:href="img/apartment/icons.svg#icon-person"></use>
+                                            </svg>
+                                            <p>Persons: 2</p>
+                                        </div>
+                                        <div class="header-content__item">
+                                            <svg class="header-content__icon">
+                                                <use xlink:href="img/apartment/icons.svg#icon-sleep"></use>
+                                            </svg>
+                                            <p>Available: 1</p>
+                                        </div>
+                                    </div>
+                                    <p class="item-body__deskriptions">Our Molloy-Suite 1 Full 1 Twin provides a
+                                        living
+                                        room
+                                        with a pullout couch, kitchen, and seperate bedroom These rooms are situated
+                                        on
+                                        the
+                                        beach side of Gulf Blvd. (but do not have a view)
+                                    </p>
+                                    <ul class="item-list">
+                                        <li class="item-list__item">
+                                            <svg class="header-content__icon">
+                                                <use xlink:href="img/apartment/icons.svg#icon-beach"></use>
+                                            </svg>
+                                            <p>Beachfront</p>
+                                        </li>
+                                        <li class="item-list__item">
+                                            <svg class="header-content__icon">
+                                                <use xlink:href="img/apartment/icons.svg#icon-pool"></use>
+                                            </svg>
+                                            <p>1 swimming pool</p>
+                                        </li>
+                                        <li class="item-list__item">
+                                            <svg class="header-content__icon">
+                                                <use xlink:href="img/apartment/icons.svg#icon-parking"></use>
+                                            </svg>
+                                            <p>Free parking</p>
+                                        </li>
+                                        <li class="item-list__item">
+                                            <svg class="header-content__icon">
+                                                <use xlink:href="img/apartment/icons.svg#icon-wifi"></use>
+                                            </svg>
+                                            <p>Free WiFi</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="item-bottom">
+                                <div class="item-bottom__price">
+                                    <div class="item-bottom__line">
+                                        <span class="item-bottom__line-from">From</span>
+                                        <span class="item-bottom__line-price">$102.29 <span>Per night</span></span>
+                                    </div>
+                                    <span class="item-bottom__text">(excluding taxes & fees)</span>
+                                </div>
+                                <a href="#" class="item-btn btn">Book your stay</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next">
+                    <img src="img/next.svg" alt="">
+                </div>
+                <div class="swiper-button-prev">
+                    <img src="img/prev.svg" alt="">
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
 
 
 
-    <!-- <div style="min-height: 600px;"></div> -->
+
+    <div style="min-height: 600px;"></div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+        </script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/slider.js"></script>
 </body>
 
 </html>
