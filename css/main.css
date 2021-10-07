@@ -1688,6 +1688,7 @@ a {
   .testimonials-wrapper {
     background-size: cover;
     background-position: center;
+    padding: 140px 0 200px 0;
   }
 }
 
@@ -1955,6 +1956,146 @@ a {
 @media (max-width: 967px) {
   .testimonials-wrapper .testimonials .testimonials-list .column .item-371 {
     height: auto;
+  }
+}
+
+.map-wrapper {
+  padding: 50px 0;
+}
+
+@media (max-width: 767px) {
+  .map-wrapper {
+    padding: 0;
+  }
+}
+
+.map-wrapper .map-overlay {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  background-image: url(../img/map/map.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 58px 78px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0px 46px 74px -44px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 46px 74px -44px rgba(0, 0, 0, 0.25);
+  border-radius: 32px;
+}
+
+@media (max-width: 1220px) {
+  .map-wrapper .map-overlay {
+    width: 968px;
+  }
+}
+
+@media (max-width: 967px) {
+  .map-wrapper .map-overlay {
+    width: 720px;
+    padding: 58px 18px;
+  }
+}
+
+@media (max-width: 767px) {
+  .map-wrapper .map-overlay {
+    width: 100%;
+    padding: 455px 30px 18px 30px;
+    background-image: url(../img/map/bg-mobile.png);
+  }
+}
+
+.map-wrapper .map-overlay .map-form {
+  position: relative;
+  background: #ffffff;
+  border-radius: 15px;
+  padding: 20px 40px;
+  width: 329px;
+}
+
+.map-wrapper .map-overlay .map-form .map-form__logo {
+  width: 98px;
+  margin: 0 auto;
+  margin-bottom: 14px;
+}
+
+.map-wrapper .map-overlay .map-form .map-form__logo img {
+  display: block;
+  width: 100%;
+}
+
+.map-wrapper .map-overlay .map-form .form {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.map-wrapper .map-overlay .map-form .form .form-input {
+  width: 100%;
+  border: 1px solid #6d86a4;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 5px;
+  padding: 20px;
+  outline: none;
+  color: #6d86a4;
+  margin-bottom: 10px;
+}
+
+.map-wrapper .map-overlay .map-form .form .form-input::-webkit-input-placeholder {
+  color: #6d86a4;
+}
+
+.map-wrapper .map-overlay .map-form .form .form-input:-ms-input-placeholder {
+  color: #6d86a4;
+}
+
+.map-wrapper .map-overlay .map-form .form .form-input::-ms-input-placeholder {
+  color: #6d86a4;
+}
+
+.map-wrapper .map-overlay .map-form .form .form-input::placeholder {
+  color: #6d86a4;
+}
+
+.map-wrapper .map-overlay .map-form .form .form-btn {
+  display: block;
+  width: 100%;
+  outline: none;
+  border: 0 solid transparent;
+  background: linear-gradient(46.19deg, #f09819 5.66%, #edde5d 94.35%);
+  -webkit-box-shadow: 0px 2.38723px 0px #e1991e;
+          box-shadow: 0px 2.38723px 0px #e1991e;
+  border-radius: 5px;
+  padding: 18px 0;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 18px;
+  color: #f2f2f2;
+}
+
+.map-wrapper .map-overlay .map-form .map-form__text-bottom {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #6d86a4;
+}
+
+.map-wrapper .map-overlay .map-form::before {
+  position: absolute;
+  content: "";
+  width: 110px;
+  height: 110px;
+  right: -30px;
+  top: -30px;
+  background-image: url(../img/map/form-after.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+@media (max-width: 767px) {
+  .map-wrapper .map-overlay .map-form::before {
+    display: none;
   }
 }
 /*# sourceMappingURL=main.css.map */
