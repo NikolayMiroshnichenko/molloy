@@ -1,0 +1,192 @@
+.testimonials-wrapper {
+    width: 100%;
+    background-image: url(../img/testimonials/bg.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 140px 0;
+
+    @media (max-width: 967px) {
+        background-size: cover;
+        background-position: center;
+    }
+
+    .testimonials {
+        width: 915px;
+        margin: 0 auto;
+
+        @media (max-width: 967px) {
+            width: 720px;
+        }
+        @media (max-width: 767px) {
+            width: 90%;
+        }
+
+        .testimonials__title-wrapper {
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+            margin-bottom: 30px;
+
+            @media (max-width: 967px) {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .testimonials__title {
+                color: #ffffff;
+
+                @media (max-width: 967px) {
+                    margin-bottom: 20px;
+                }
+            }
+            .testimonials_title-rating {
+                display: flex;
+                align-items: center;
+
+                .rating {
+                    display: flex;
+                    align-items: flex-end;
+                    border-radius: 9px;
+                    padding: 11px 16px;
+                    background-color: rgba(21, 21, 21, 0.1);
+                    margin-right: 10px;
+
+                    .rating-block {
+                        margin-right: 8px;
+                        .rating-block__title {
+                            font-size: 21px;
+                            font-weight: 700;
+                            color: #ffffff;
+
+                            @media (max-width: 767px) {
+                                font-size: 16px;
+                            }
+                        }
+                        .rating-block__text {
+                            font-size: 21px;
+                            font-weight: 300;
+                            color: #ffffff;
+
+                            @media (max-width: 767px) {
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                    .rating-number {
+                        font-weight: 999;
+                        font-size: 35px;
+                        line-height: 1;
+                        color: #ffffff;
+
+                        @media (max-width: 767px) {
+                            font-size: 28px;
+                        }
+                    }
+
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+        .testimonials-list {
+            display: flex;
+            justify-content: space-between;
+
+            @media (max-width: 967px) {
+                flex-direction: column;
+            }
+
+            .column {
+                width: 293px;
+                @media (max-width: 967px) {
+                    width: 100%;
+                }
+
+                .item {
+                    position: relative;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    width: 100%;
+                    background: #ffffff;
+                    border-radius: 13px;
+                    box-sizing: border-box;
+                    padding: 24px 13px;
+                    margin-bottom: 15px;
+
+                    .item-header {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        margin-bottom: 11px;
+
+                        .item-header__name {
+                            .item-header__name__title {
+                                font-weight: bold;
+                                font-size: 16px;
+                                line-height: 1.5;
+                                color: #525252;
+                            }
+                            .item-header__name__text {
+                                font-size: 12px;
+                                line-height: 1.4;
+                                color: #6d86a4;
+                            }
+                        }
+                        .item-header__number {
+                            font-weight: bold;
+                            font-size: 30px;
+                            line-height: 1.5;
+                            color: #6d86a4;
+                            padding: 4px 11px;
+                            background: #f1f1f1;
+                            border-radius: 16px;
+                        }
+                    }
+                    .item-title {
+                        text-transform: uppercase;
+                        font-size: 20px;
+                        line-height: 1.5;
+                        margin-bottom: 20px;
+                    }
+                    .item-text {
+                        font-size: 16px;
+                        line-height: 1.6;
+                        color: #6d86a4;
+                    }
+                }
+                .item-293 {
+                    height: 293px;
+                    @media (max-width: 967px) {
+                        height: auto;
+                    }
+                }
+                .item-359 {
+                    height: 359px;
+                    @media (max-width: 967px) {
+                        height: auto;
+                    }
+                }
+                .item-227 {
+                    height: 227px;
+                    @media (max-width: 967px) {
+                        height: auto;
+                    }
+                }
+                .item-215 {
+                    height: 215px;
+                    @media (max-width: 967px) {
+                        height: auto;
+                    }
+                }
+                .item-371 {
+                    height: 371px;
+                    @media (max-width: 967px) {
+                        height: auto;
+                    }
+                }
+            }
+        }
+    }
+}
