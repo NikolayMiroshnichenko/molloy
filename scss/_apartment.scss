@@ -99,9 +99,24 @@
                     margin-bottom: 10px;
                 }
 
-                img {
+                .item-body__img-first {
                     display: block;
                     width: 100%;
+                }
+                .item-body__row {
+                    width: 100%;
+                    display: flex;
+                    align-items: flex-start;
+
+                    img {
+                        width: 33.33333333%;
+                        display: block;
+                        height: 80px;
+
+                        @media (max-width: 767px) {
+                            height: 90px;
+                        }
+                    }
                 }
             }
             .item-body__content {
@@ -290,20 +305,23 @@
     .swiper-button-prev {
         right: 60px;
         left: auto;
+        outline: none;
 
         @media (max-width: 767px) {
             right: auto;
             left: 0;
+            outline: none;
         }
     }
 
     .swiper-button-next {
         right: 0;
+        outline: none;
 
         @media (max-width: 767px) {
             right: 0;
             left: auto;
+            outline: none;
         }
     }
 }
-

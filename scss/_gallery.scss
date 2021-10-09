@@ -152,6 +152,7 @@
         .swiper-button-next:after,
         .swiper-button-prev:after {
             font-size: 0;
+            outline: none;
         }
         .swiper-button-next,
         .swiper-button-prev {
@@ -160,6 +161,7 @@
             margin-top: 0;
             height: auto;
             width: auto;
+            outline: none;
 
             @media (max-width: 767px) {
                 img {
