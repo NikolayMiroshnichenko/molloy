@@ -250,60 +250,60 @@
     }
 
     // SWIPER
-    .swiper-pagination-progressbar {
-        position: static;
-    }
-    .swiper {
-        padding-top: 100px;
-        @media (max-width: 767px) {
-            padding-top: 0;
-        }
-    }
-    .swiper-horizontal > .swiper-pagination-progressbar,
-    .swiper-pagination-progressbar.swiper-pagination-horizontal,
-    .swiper-pagination-progressbar.swiper-pagination-vertical.swiper-pagination-progressbar-opposite,
-    .swiper-vertical > .swiper-pagination-progressbar.swiper-pagination-progressbar-opposite {
-        height: 6px;
-    }
-    .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
-        background: #6d86a4;
-    }
-    .swiper-pagination-progressbar {
-        background: #f7f7f7;
-    }
-    .swiper-button-next:after,
-    .swiper-button-prev:after {
-        font-size: 0;
-    }
-    .swiper-button-next,
-    .swiper-button-prev {
-        top: 0;
-        margin-top: 0;
-        height: auto;
-        width: auto;
+    // .swiper-pagination-progressbar {
+    //     position: static;
+    // }
+    // .swiper {
+    //     padding-top: 100px;
+    //     @media (max-width: 767px) {
+    //         padding-top: 0;
+    //     }
+    // }
+    // .swiper-horizontal > .swiper-pagination-progressbar,
+    // .swiper-pagination-progressbar.swiper-pagination-horizontal,
+    // .swiper-pagination-progressbar.swiper-pagination-vertical.swiper-pagination-progressbar-opposite,
+    // .swiper-vertical > .swiper-pagination-progressbar.swiper-pagination-progressbar-opposite {
+    //     height: 6px;
+    // }
+    // .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+    //     background: #6d86a4;
+    // }
+    // .swiper-pagination-progressbar {
+    //     background: #f7f7f7;
+    // }
+    // .swiper-button-next:after,
+    // .swiper-button-prev:after {
+    //     font-size: 0;
+    // }
+    // .swiper-button-next,
+    // .swiper-button-prev {
+    //     top: 0;
+    //     margin-top: 0;
+    //     height: auto;
+    //     width: auto;
 
-        @media (max-width: 767px) {
-            top: 35%;
-        }
-    }
+    //     @media (max-width: 767px) {
+    //         top: 35%;
+    //     }
+    // }
 
-    .swiper-button-prev {
-        right: 60px;
-        left: auto;
+    // .swiper-button-prev {
+    //     right: 60px;
+    //     left: auto;
 
-        @media (max-width: 767px) {
-            right: auto;
-            left: 0;
-        }
-    }
+    //     @media (max-width: 767px) {
+    //         right: auto;
+    //         left: 0;
+    //     }
+    // }
 
-    .swiper-button-next {
-        right: 0;
+    // .swiper-button-next {
+    //     right: 0;
 
-        @media (max-width: 767px) {
-            right: 0;
-            left: auto;
-        }
-    }
+    //     @media (max-width: 767px) {
+    //         right: 0;
+    //         left: auto;
+    //     }
+    // }
 }
 
